@@ -55,10 +55,11 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern TIM_HandleTypeDef htim4;
+
 /* USER CODE BEGIN EV */
-	extern	uint32_t 	ch_u32[5] ;
+
 	extern	uint32_t 	DIO0_status ;
+
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -205,29 +206,14 @@ void SysTick_Handler(void)
 void EXTI0_IRQHandler(void)
 {
   /* USER CODE BEGIN EXTI0_IRQn 0 */
+
 	DIO0_status = 1;
-#ifdef SLAVE
-	HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-#endif
+
   /* USER CODE END EXTI0_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(DIO0_Pin);
   /* USER CODE BEGIN EXTI0_IRQn 1 */
 
   /* USER CODE END EXTI0_IRQn 1 */
-}
-
-/**
-  * @brief This function handles TIM4 global interrupt.
-  */
-void TIM4_IRQHandler(void)
-{
-  /* USER CODE BEGIN TIM4_IRQn 0 */
-	ch_u32[0] = 1;
-  /* USER CODE END TIM4_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim4);
-  /* USER CODE BEGIN TIM4_IRQn 1 */
-
-  /* USER CODE END TIM4_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
