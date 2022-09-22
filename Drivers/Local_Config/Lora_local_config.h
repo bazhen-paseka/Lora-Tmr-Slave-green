@@ -24,6 +24,7 @@
 **************************************************************************
 */
 	#define 	SOFT_VERSION 		4010
+	#define 	SLAVE
 	#define 	SLAVE_QNT			5
 	#define 	SLAVE_NUMBER		1
 	#define		ADC_COEFFICIENT		8233	//	for 2R
