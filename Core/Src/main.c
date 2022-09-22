@@ -98,7 +98,7 @@ int main(void)
   MX_CRC_Init();
   /* USER CODE BEGIN 2 */
 
-  	  LoRa_Contact_Init();
+  	  LoRa_Slave_Init();
 
   /* USER CODE END 2 */
 
@@ -106,7 +106,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  LoRa_Contact_Main();
+	  LoRa_Slave_Main();
 
     /* USER CODE END WHILE */
 
