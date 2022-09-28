@@ -64,10 +64,8 @@ void Error_Handler(void);
 #define RESET_GPIO_Port GPIOA
 #define NSS_Pin GPIO_PIN_4
 #define NSS_GPIO_Port GPIOA
-#define LED_RED_Pin GPIO_PIN_12
-#define LED_RED_GPIO_Port GPIOA
-#define LED_GRN_Pin GPIO_PIN_15
-#define LED_GRN_GPIO_Port GPIOA
+#define LED_Pin GPIO_PIN_12
+#define LED_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
