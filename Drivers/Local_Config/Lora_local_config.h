@@ -23,14 +23,13 @@
 *								    DEFINES                     
 **************************************************************************
 */
-	#define 	SOFT_VERSION 		4050
+	#define 	SOFT_VERSION 		4060
 	#define 	SLAVE
 	#define 	SLAVE_QNT			5
 	#define 	SLAVE_NUMBER		1
 	#define		ADC_COEFFICIENT		8233	//	for 2R
+	//	#define 	LOW_POWER_SLEEP_MODE
 	#define 	LOW_POWER_STOP_MODE		//	STOP much better then SLEEP
-//	#define 	LOW_POWER_SLEEP_MODE
-
 /*
 **************************************************************************
 *								   DATA TYPES
