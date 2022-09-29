@@ -23,7 +23,7 @@
 *								    DEFINES                     
 **************************************************************************
 */
-	#define 	SOFT_VERSION 		4070
+	#define 	SOFT_VERSION 		4080
 	#define 	SLAVE
 	#define 	SLAVE_QNT			5
 	#define 	SLAVE_NUMBER		1
